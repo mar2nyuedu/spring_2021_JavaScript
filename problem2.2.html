@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+var spending = 2000;
+var discountRate = 0
+var discountAmount =0
+
+if (spending<1000){
+    discountRate = 0
+}
+else if (spending>=1000 && spending < 1500){
+    discountRate=10
+}
+else if (spending >=1500 && spending < 2000){
+    discountRate = 15
+}
+else if(spending === 2000){
+    discountRate = 20
+}
+else{
+    discountRate = 30
+}
+
+discountAmount = spending * discountRate/100
+
+console.log("Discount Amount is "  + discountAmount)
+
+</script>    
+</body>
+</html>
