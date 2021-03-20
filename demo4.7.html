@@ -1,0 +1,22 @@
+<html id = "1">
+    <head id = "2">
+    </head>
+    <body id = "3">
+        Enter log in ID<input type="text" id = "5" name="loginId" value=""></input><br/>
+        Enter password<input type="password" id = "6" name="password" value=""></input><br/>
+        <input type="checkbox" id = "7" name="promotions"></input> Please email me about special offers and promotions. <br/>
+
+        <input type="button" id="4" name="myButton" value="Send"></input>
+    </body>
+    <script>
+        function myEventListener(e){
+            var myTextBox = document.getElementById("6")
+            var myValue = myTextBox.value;
+            window.alert(myValue)
+        }
+
+        var anyButton = document.getElementById("4");
+        anyButton.addEventListener("click", myEventListener)
+    </script>
+</html>
+
